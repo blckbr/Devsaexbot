@@ -1,5 +1,5 @@
 {
-  "name": "lbot-whatsapp",
+  "name": "Devsaexbot",
   "version": "1.16.1",
   "description": "Bot brasileiro para Whatsapp com diversas utilidades para o dia-a-dia.",
   "main": "app",
@@ -21,7 +21,7 @@
     "correios-brasil": "2.1.0",
     "deepai": "1.0.17",
     "dotenv": "8.2.0",
-    "fbdl-core": "git+https://github.com/victorsouzaleal/fbdl-core.git",
+    "fbdl-core": "git+https://github.com/devsaex/fbdl-core.git",
     "fluent-ffmpeg": "2.1.2",
     "form-data": "4.0.0",
     "format-duration-time": "1.5.4",
@@ -47,7 +47,7 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/victorsouzaleal/lbot-whatsapp.git"
+    "url": "git+https://github.com/blckbr/Devsaexbot.git"
   },
   "keywords": [
     "whatsapp",
