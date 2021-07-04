@@ -2,21 +2,21 @@
 <img src="https://avatars0.githubusercontent.com/u/4674786?s=400&u=2f77d382a4428c141558772a2b7ad3a36bebf5bc&v=4" width="128" height="128"/>
 </p>
 <p align="center">
-<a href="#"><img title="LBot-WhatsApp" src="https://img.shields.io/badge/DevsaexBOT-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
+<a href="#"><img title="Devsaexbot" src="https://img.shields.io/badge/DevsaexBOT-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 <p align="center">
 <a href="https://github.com/victorsouzaleal"><img title="Autor" src="https://img.shields.io/badge/Autor-blckbr-blue.svg?style=for-the-badge&logo=github"></a>
 </p>
 <p align="center">
-<a href="https://www.codefactor.io/repository/github/blckbr/lbot-whatsapp"><img src="https://www.codefactor.io/repository/github/victorsouzaleal/lbot-whatsapp/badge" alt="CodeFactor" /></a>
+<a href="https://www.codefactor.io/repository/github/blckbr/Devsaexbot"><img src="https://www.codefactor.io/repository/github/victorsouzaleal/Devsaexbot/badge" alt="CodeFactor" /></a>
 </p>
 <p align="center">
-<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fvictorsouzaleal%2Flbot-whatsapp&count_bg=%231D8ED9&title_bg=%23454545&icon=github.svg&icon_color=%23E7E7E7&title=visualizacoes&edge_flat=true"/></a>
-<a href="#"><img title="Versão" src="https://img.shields.io/github/package-json/v/victorsouzaleal/lbot-whatsapp?label=vers%C3%A3o&style=flat-square"></a>
-<a href="#"><img title="Tamanho" src="https://img.shields.io/github/repo-size/victorsouzaleal/lbot-whatsapp?label=tamanho&style=flat-square"></a>
+<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fvictorsouzaleal%2FDevsaexbot&count_bg=%231D8ED9&title_bg=%23454545&icon=github.svg&icon_color=%23E7E7E7&title=visualizacoes&edge_flat=true"/></a>
+<a href="#"><img title="Versão" src="https://img.shields.io/github/package-json/v/victorsouzaleal/Devsaexbot?label=vers%C3%A3o&style=flat-square"></a>
+<a href="#"><img title="Tamanho" src="https://img.shields.io/github/repo-size/victorsouzaleal/Devsaexbot?label=tamanho&style=flat-square"></a>
 <a href="https://github.com/victorsouzaleal/followers"><img title="Seguidores" src="https://img.shields.io/github/followers/victorsouzaleal?label=seguidores&style=flat-square"></a>
-<a href="https://github.com/victorsouzaleal/lbot-whatsapp/stargazers/"><img title="Estrelas" src="https://img.shields.io/github/stars/victorsouzaleal/lbot-whatsapp?label=estrelas&style=flat-square"></a>
-<a href="https://github.com/victorsouzaleal/lbot-whatsapp/watchers"><img title="Acompanhando" src="https://img.shields.io/github/watchers/victorsouzaleal/lbot-whatsapp?label=acompanhando&color=blue&style=flat-square"></a>
+<a href="https://github.com/blckbr/Devsaexbot/stargazers/"><img title="Estrelas" src="https://img.shields.io/github/stars/blckbr/Devsaexbot?label=estrelas&style=flat-square"></a>
+<a href="https://github.com/blckbr/Devsaexbot/watchers"><img title="Acompanhando" src="https://img.shields.io/github/watchers/blckbr/Devsaexbot?label=acompanhando&color=blue&style=flat-square"></a>
 <a href="#"><img title="Atualizacao" src="https://img.shields.io/badge/atualizado-SIM-blue.svg"/></a>
 </p>
 
@@ -47,7 +47,7 @@ Para clonar, digite os comandos abaixo no Terminal do seu sistema:
 
 ```bash
 git clone https://github.com/blckbr/Devsaexbot.git
-cd lbot-whatsapp
+cd Devsaexbot
 ```
 
 Ou se quiser fazer o download diretamente (extraia o zip e entre na pasta para os passos seguintes):
