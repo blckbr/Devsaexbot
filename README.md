@@ -5,16 +5,16 @@
 <a href="#"><img title="Devsaexbot" src="https://img.shields.io/badge/DevsaexBOT-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 <p align="center">
-<a href="https://github.com/victorsouzaleal"><img title="Autor" src="https://img.shields.io/badge/Autor-blckbr-blue.svg?style=for-the-badge&logo=github"></a>
+<a href="https://github.com/blckbr"><img title="Autor" src="https://img.shields.io/badge/Autor-blckbr-blue.svg?style=for-the-badge&logo=github"></a>
 </p>
 <p align="center">
-<a href="https://www.codefactor.io/repository/github/blckbr/Devsaexbot"><img src="https://www.codefactor.io/repository/github/victorsouzaleal/Devsaexbot/badge" alt="CodeFactor" /></a>
+<a href="https://www.codefactor.io/repository/github/blckbr/Devsaexbot"><img src="https://www.codefactor.io/repository/github/blckbr/Devsaexbot/badge" alt="CodeFactor" /></a>
 </p>
 <p align="center">
-<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fvictorsouzaleal%2FDevsaexbot&count_bg=%231D8ED9&title_bg=%23454545&icon=github.svg&icon_color=%23E7E7E7&title=visualizacoes&edge_flat=true"/></a>
-<a href="#"><img title="Versão" src="https://img.shields.io/github/package-json/v/victorsouzaleal/Devsaexbot?label=vers%C3%A3o&style=flat-square"></a>
-<a href="#"><img title="Tamanho" src="https://img.shields.io/github/repo-size/victorsouzaleal/Devsaexbot?label=tamanho&style=flat-square"></a>
-<a href="https://github.com/victorsouzaleal/followers"><img title="Seguidores" src="https://img.shields.io/github/followers/victorsouzaleal?label=seguidores&style=flat-square"></a>
+<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%blckbr%2FDevsaexbot&count_bg=%231D8ED9&title_bg=%23454545&icon=github.svg&icon_color=%23E7E7E7&title=visualizacoes&edge_flat=true"/></a>
+<a href="#"><img title="Versão" src="https://img.shields.io/github/package-json/v/blckbr/Devsaexbot?label=vers%C3%A3o&style=flat-square"></a>
+<a href="#"><img title="Tamanho" src="https://img.shields.io/github/repo-size/blckbr/Devsaexbot?label=tamanho&style=flat-square"></a>
+<a href="https://github.com/blckbr/followers"><img title="Seguidores" src="https://img.shields.io/github/followers/victorsouzaleal?label=seguidores&style=flat-square"></a>
 <a href="https://github.com/blckbr/Devsaexbot/stargazers/"><img title="Estrelas" src="https://img.shields.io/github/stars/blckbr/Devsaexbot?label=estrelas&style=flat-square"></a>
 <a href="https://github.com/blckbr/Devsaexbot/watchers"><img title="Acompanhando" src="https://img.shields.io/github/watchers/blckbr/Devsaexbot?label=acompanhando&color=blue&style=flat-square"></a>
 <a href="#"><img title="Atualizacao" src="https://img.shields.io/badge/atualizado-SIM-blue.svg"/></a>
