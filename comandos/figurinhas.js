@@ -3,7 +3,6 @@ const { decryptMedia } = require('@open-wa/wa-decrypt')
 const msgs_texto = require('../lib/msgs')
 const {erroComandoMsg, consoleErro, removerNegritoComando} = require("../lib/util")
 const sticker = require("../lib/sticker")
-
 module.exports = figurinhas = async(client,message) => {
     try{
         const { type, id, from, caption, isMedia, mimetype, quotedMsg, quotedMsgObj, body} = message
@@ -12,24 +11,23 @@ module.exports = figurinhas = async(client,message) => {
         command = removerNegritoComando(command)
         const args =  commands.split(' ')
         const uaOverride = 'WhatsApp/2.2029.4 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36'
-
         switch(command){      
             case '!s': 
                 if(isMedia || quotedMsg){
                     var argSticker = args.length > 1 ? args[1].toLowerCase() : ""
                     var stickerMetadata = {
+                        author: "Devsaex", 
+                        pack: "Devsaexbot Stickers", 
                         author: process.env.NOME_AUTOR_FIGURINHAS.trim(), 
                         pack: `${process.env.NOME_AUTOR_FIGURINHAS.trim()} Stickers`, 
                         keepScale: true, 
                         circle: false, 
                         discord: "701084178112053288"
                     }
-
                     if(argSticker == "1"){
                         stickerMetadata.circle = true
                         stickerMetadata.keepScale = false
                     }
-
                     var dadosMensagem = {
                         tipo : (isMedia) ? type : quotedMsg.type,
                         mimetype : (isMedia)? mimetype : quotedMsg.mimetype,
@@ -59,11 +57,12 @@ module.exports = figurinhas = async(client,message) => {
                     client.reply(from, erroComandoMsg(command), id)
                 }
                 break
-
             case '!sgif':
                 if(isMedia || quotedMsg){
                     var argSticker = args.length > 1 ? args[1].toLowerCase() : ""
                     var stickerMetadata = {
+                        author: "Devsaexbot", 
+                        pack: "Devsaexbotbot Sticker Animado", 
                         author: process.env.NOME_AUTOR_FIGURINHAS.trim(), 
                         pack: `${process.env.NOME_AUTOR_FIGURINHAS.trim()} Sticker Animado`, 
                         keepScale: false, 
@@ -75,14 +74,12 @@ module.exports = figurinhas = async(client,message) => {
                         fps:9,
                         square:240
                     }
-
                     if(argSticker == "1"){
                         stickerMetadata.keepScale = true
                         configConversao.crop = false
                     } else if (argSticker == "2"){
                         stickerMetadata.circle = true
                     }
-
                     var dadosMensagem = {
                         mimetype : (isMedia)? mimetype : quotedMsg.mimetype,
                         duracao: (isMedia)? message.duration : quotedMsg.duration,
@@ -106,6 +103,7 @@ module.exports = figurinhas = async(client,message) => {
                 break
 
             case "!tps":
+                if(args.length == 1 || type != "chat") return client.reply(from,erroComandoMsg(command),id)
                 if(args.length == 1 || type != "chat") return client.reply(from, erroComandoMsg(command), id)
                 var stickerMetadata = {
                     author: process.env.NOME_AUTOR_FIGURINHAS.trim(), 
@@ -118,6 +116,7 @@ module.exports = figurinhas = async(client,message) => {
                 await client.reply(from, msgs_texto.figurinhas.tps.espera,id)
                 try{
                     var imagemBase64 = await sticker.textoParaFoto(usuarioTexto)
+                    client.sendImageAsSticker(from, imagemBase64, {author: "Devsaexbot", pack: "Devsaexbot Sticker Textos", keepScale: true, discord: "701084178112053288"}).catch(err=>{
                     client.sendImageAsSticker(from, imagemBase64, stickerMetadata).catch(err=>{
                         consoleErro(err.message, "STICKER-TPS")
                         client.reply(from, msgs_texto.figurinhas.sticker.erro_s,id)
@@ -126,7 +125,6 @@ module.exports = figurinhas = async(client,message) => {
                     client.reply(from, err.message, id)
                 }
                 break
-
             case "!atps":
                 if(args.length == 1 || type != "chat") return client.reply(from,erroComandoMsg(command),id)
                 var usuarioTexto = body.slice(5).trim()
@@ -139,7 +137,7 @@ module.exports = figurinhas = async(client,message) => {
                     await client.reply(from, err.message, id)
                 }
                 break
-            
+
             case '!ssf':
                 if(isMedia || quotedMsg){
                     var stickerMetadata = {
@@ -157,6 +155,7 @@ module.exports = figurinhas = async(client,message) => {
                         var mediaData = await decryptMedia(dadosMensagem.mensagem, uaOverride)
                         try{
                             var saidaImgBase64 = await sticker.removerFundoImagem(mediaData, dadosMensagem.mimetype)
+                            client.sendImageAsSticker(from, saidaImgBase64, {author: "Devsaexbot", pack: "Devsaexbot Sticker Sem Fundo", keepScale: true, discord: "701084178112053288"}).catch(err=>{
                             client.sendImageAsSticker(from, saidaImgBase64, stickerMetadata).catch(err=>{
                                 consoleErro(err.message, "STICKER-SSF")
                                 client.reply(from, msgs_texto.figurinhas.sticker.erro_s,id)
@@ -176,5 +175,4 @@ module.exports = figurinhas = async(client,message) => {
         throw err
     }
     
-
 }
