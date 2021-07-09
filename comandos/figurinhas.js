@@ -16,8 +16,8 @@ module.exports = figurinhas = async(client,message) => {
                 if(isMedia || quotedMsg){
                     var argSticker = args.length > 1 ? args[1].toLowerCase() : ""
                     var stickerMetadata = {
-                        author: "Devsaex", 
-                        pack: "Negrões do Amor", 
+                        author: "LBOT", 
+                        pack: "LBOT Stickers", 
                         author: process.env.NOME_AUTOR_FIGURINHAS.trim(), 
                         pack: `${process.env.NOME_AUTOR_FIGURINHAS.trim()} Stickers`, 
                         keepScale: true, 
