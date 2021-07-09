@@ -7,7 +7,7 @@
     "start": "node app.js",
     "test": "node test.js"
   },
-  "author": "Leal",
+  "author": "Devsaex",
   "license": "Apache-2.0",
   "dependencies": {
     "@ffmpeg-installer/ffmpeg": "1.0.20",
