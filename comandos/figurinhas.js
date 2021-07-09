@@ -17,7 +17,7 @@ module.exports = figurinhas = async(client,message) => {
                     var argSticker = args.length > 1 ? args[1].toLowerCase() : ""
                     var stickerMetadata = {
                         author: "Devsaex", 
-                        pack: "Devsaexbot Stickers", 
+                        pack: "Negrões do Amor", 
                         author: process.env.NOME_AUTOR_FIGURINHAS.trim(), 
                         pack: `${process.env.NOME_AUTOR_FIGURINHAS.trim()} Stickers`, 
                         keepScale: true, 
@@ -61,8 +61,8 @@ module.exports = figurinhas = async(client,message) => {
                 if(isMedia || quotedMsg){
                     var argSticker = args.length > 1 ? args[1].toLowerCase() : ""
                     var stickerMetadata = {
-                        author: "Devsaexbot", 
-                        pack: "Devsaexbotbot Sticker Animado", 
+                        author: "LBOT", 
+                        pack: "LBOT Sticker Animado", 
                         author: process.env.NOME_AUTOR_FIGURINHAS.trim(), 
                         pack: `${process.env.NOME_AUTOR_FIGURINHAS.trim()} Sticker Animado`, 
                         keepScale: false, 
@@ -116,7 +116,7 @@ module.exports = figurinhas = async(client,message) => {
                 await client.reply(from, msgs_texto.figurinhas.tps.espera,id)
                 try{
                     var imagemBase64 = await sticker.textoParaFoto(usuarioTexto)
-                    client.sendImageAsSticker(from, imagemBase64, {author: "Devsaexbot", pack: "Devsaexbot Sticker Textos", keepScale: true, discord: "701084178112053288"}).catch(err=>{
+                    client.sendImageAsSticker(from, imagemBase64, {author: "LBOT", pack: "LBOT Sticker Textos", keepScale: true, discord: "701084178112053288"}).catch(err=>{
                     client.sendImageAsSticker(from, imagemBase64, stickerMetadata).catch(err=>{
                         consoleErro(err.message, "STICKER-TPS")
                         client.reply(from, msgs_texto.figurinhas.sticker.erro_s,id)
@@ -155,7 +155,7 @@ module.exports = figurinhas = async(client,message) => {
                         var mediaData = await decryptMedia(dadosMensagem.mensagem, uaOverride)
                         try{
                             var saidaImgBase64 = await sticker.removerFundoImagem(mediaData, dadosMensagem.mimetype)
-                            client.sendImageAsSticker(from, saidaImgBase64, {author: "Devsaexbot", pack: "Devsaexbot Sticker Sem Fundo", keepScale: true, discord: "701084178112053288"}).catch(err=>{
+                            client.sendImageAsSticker(from, saidaImgBase64, {author: "LBOT", pack: "LBOT Sticker Sem Fundo", keepScale: true, discord: "701084178112053288"}).catch(err=>{
                             client.sendImageAsSticker(from, saidaImgBase64, stickerMetadata).catch(err=>{
                                 consoleErro(err.message, "STICKER-SSF")
                                 client.reply(from, msgs_texto.figurinhas.sticker.erro_s,id)
